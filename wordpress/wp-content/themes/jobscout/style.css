@@ -8166,6 +8166,7 @@ RESPONSIVE STYLESHEET
   height: auto;
   display: flex;
   background: #fff;
+  margin-bottom: 20px;
 }
 .content_my_box_left{
   float: left;
@@ -8207,17 +8208,17 @@ RESPONSIVE STYLESHEET
 section.bg-st-edit{
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   
 }
 .article-section .bonus-edit {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-gap: 20px;
   text-align: left;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 /* Het Css cua phan 3 */
