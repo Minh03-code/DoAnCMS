@@ -9,6 +9,7 @@
  *
  * @package JobScout
  */
+
 $find_a_job_link = get_option('job_manager_jobs_page_id', 0);
 $post_slug       = get_post_field('post_name', $find_a_job_link);
 $ed_job_category = get_option('job_manager_enable_categories');
@@ -24,37 +25,49 @@ if ($post_slug) {
 <div class="job_listings">
 
 
-<div class="bg-black">
-        <form action="<?php echo esc_url($action_page) ?>" method="GET" class="padding">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="input-group mb-3 minh">
-                        <span class="input-group-text minh" id="basic-addon1">
-                            <i class="fa fa-search color-ogrange" aria-hidden="true"></i>
-                        </span>
-                        <input type="text" id="search_keywords" name="search_keywords" class="form-control minh" placeholder="Search for jobs, companies, skills" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="input-group mb-3 minh">
-                        <label class="input-group-text bg-white minh" for="inputGroupSelect02">
-                            <i class="fa fa-map-marker color-ogrange" aria-hidden="true"></i>
-                        </label>
-                        <select class="form-select minh" id="inputGroupSelect02" id="search_location" name="search_location">
-                          <option selected></option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                </div>
-                <div class="col-md-3 padding-none">
-                    <input type="submit" value="<?php esc_attr_e('Search', 'jobscout'); ?>" class="form-control btn btn-ogrange minh">
-                </div>
-            </div>
-        </form>
-    </div>
-  <form class="jobscout_job_filters" method="GET" action="<?php echo esc_url($action_page) ?>">
+  <?php
+  global $wpdb;
+  $table = $wpdb->prefi . 'postmeta';
+  $sql = "SELECT DISTINCT SUBSTRING_INDEX(`meta_value`, '_' ,-1) as location FROM `wp_postmeta` WHERE `meta_key` like '%location%' ORDER BY location";
+  $data = $wpdb->get_results($wpdb->prepare($sql));
+  ?>
+
+  <div class="bg-black">
+    <form action="<?php echo esc_url($action_page) ?>" method="GET" class="padding">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="input-group mb-3 minh">
+            <span class="input-group-text minh" id="basic-addon1">
+              <i class="fa fa-search color-ogrange" aria-hidden="true"></i>
+            </span>
+            <input type="text" id="search_keywords" name="search_keywords" class="form-control minh" placeholder="Search for jobs, companies, skills" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="input-group mb-3 minh">
+            <label class="input-group-text bg-white minh" for="inputGroupSelect02">
+              <i class="fa fa-map-marker color-ogrange" aria-hidden="true"></i>
+            </label>
+            <select class="form-select minh" id="inputGroupSelect02" id="search_location" name="search_location">
+              <option selected></option>
+              <?php
+              foreach ($data as $item) {
+              ?>
+                <option value="<?php echo $item->location ?>"><?php echo $item->location ?></option>
+              <?php
+              }
+              ?>
+
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3 padding-none">
+          <input type="submit" value="Search job" class="form-control btn btn-ogrange minh">
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- <form class="jobscout_job_filters" method="GET" action="<?php echo esc_url($action_page) ?>">
     <div class="search_jobs">
 
       <div class="search_keywords">
@@ -84,6 +97,6 @@ if ($post_slug) {
       </div>
 
     </div>
-  </form>
+  </form> -->
 
 </div>
