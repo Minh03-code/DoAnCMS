@@ -623,6 +623,7 @@ img {
   vertical-align: top;
 }
 
+
 figure {
   margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */
@@ -1163,6 +1164,7 @@ section[class*="-section"] .widget_text .widget-title,
   margin-bottom: 0;
   font-weight: 800;
   line-height: 1.5;
+  text-align: center;
 }
 
 section[class*="-section"] .widget_text .textwidget {
@@ -2896,7 +2898,6 @@ ARTICLE SECTION
 ===========================*/
 section.article-section {
   margin: 70px 0;
-  text-align: center;
 }
 
 .article-section .article-wrap {
@@ -8159,3 +8160,97 @@ RESPONSIVE STYLESHEET
 .wp-block-social-links {
   flex-wrap: wrap !important;
 }
+
+/*Start Css module 5 */
+section[class*="-section"] .widget_text .widget-title,
+.section-title.phuc,
+.client-section .widget .widget-title {
+  font-size: 1.3em;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.content_my_box.phuc {
+  width: 340px;
+  height: auto;
+  display: flex;
+  background: #fff;
+  margin-bottom: 8px;
+}
+
+.header_content_box_child.phuc {
+  font-size: 0.8em;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.article-section .bonus-edit.phuc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  text-align: left;
+  margin: 40px 70px;
+}
+
+.content_my_box_left.phuc {
+  float: left;
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+}
+
+.content_my_box_right.phuc {
+  float: right;
+  width: 55%;
+  height: 100%;
+  padding: 10px;
+}
+
+.center_content_box.phuc {
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 0.6em;
+  color: #000000;
+}
+
+.readmore_content_box.phuc {
+  margin-top: 10px;
+  font-size: 0.6em;
+}
+
+.img-phuc {
+  height: 100%;
+  /* Make sure images are scaled correctly. */
+  max-width: none;
+  width: 100%;
+  /* Adhere to container width. */
+  vertical-align: top;
+  background-size: auto;
+}
+
+.readmore_text.phuc {
+  font-weight: bold;
+  color: orange;
+}
+
+section.bg-st-edit.phuc {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.header_text_content_box.phuc{
+  color: #000;
+}
+
+/* End Css module 5 */
