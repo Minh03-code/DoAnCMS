@@ -23,52 +23,52 @@ $job_featured = get_post_meta(get_the_ID(), '_featured', true);
 $company_name = get_post_meta(get_the_ID(), '_company_name', true);
 
 ?>
-<article <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr($post->geolocation_lat); ?>" data-latitude="<?php echo esc_attr($post->geolocation_long); ?>">
+<div class="col-6">
+	<article <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr($post->geolocation_lat); ?>" data-latitude="<?php echo esc_attr($post->geolocation_long); ?>">
 
-	<figure class="company-logo">
-		<?php the_company_logo('thumbnail'); ?>
-	</figure>
-    
-	/* Start edit yeu cau 2 */
-	<div class="job-title-wrapper">
-		<h2 class="entry-title-company">
-			<a href="<?php the_job_permalink(); ?>"><?php wpjm_the_job_title(); ?></a>
-		</h2>
+		<figure class="company-logo">
+			<?php the_company_logo('thumbnail'); ?>
+		</figure>
 
-		<span class="date-post"><?php echo "Create: " . get_the_date('M j, Y'); ?></span>
+		<div class="job-title-wrapper">
+			<h2 class="entry-title-company">
+				<a href="<?php the_job_permalink(); ?>"><?php wpjm_the_job_title(); ?></a>
+			</h2>
 
-		<div class="row bg">
-			<div class="company1">
-				<?php
-				if (get_option('job_manager_enable_types')) {
-					$types = wpjm_get_the_job_types();
-					if (!empty($types)) : foreach ($types as $jobtype) : ?>
-							<li class="job-type-company <?php echo esc_attr(sanitize_title($jobtype->slug)); ?>"><?php echo esc_html($jobtype->name); ?></li>
-				<?php endforeach;
-					endif;
-				}
-				do_action('job_listing_meta_end');
-				?>
-			</div>
+			<span class="date-post"><?php echo "Create: " . get_the_date('M j, Y'); ?></span>
 
-			<div class="company2">
-				<?php the_company_name('<strong>', '</strong> '); ?>
-			</div>
+			<div class="row bg">
+				<div class="company1">
+					<?php
+					if (get_option('job_manager_enable_types')) {
+						$types = wpjm_get_the_job_types();
+						if (!empty($types)) : foreach ($types as $jobtype) : ?>
+								<li class="job-type-company <?php echo esc_attr(sanitize_title($jobtype->slug)); ?>"><?php echo esc_html($jobtype->name); ?></li>
+					<?php endforeach;
+						endif;
+					}
+					do_action('job_listing_meta_end');
+					?>
+				</div>
 
-			<div class="company-location">
-				<?php the_job_location(true); ?>
+				<div class="company2">
+					<?php the_company_name('<strong>', '</strong> '); ?>
+				</div>
+
+				<div class="company-location">
+					<?php the_job_location(true); ?>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="job-description-content">
-		<?php echo wp_trim_words(get_the_content(), 25, ''); ?>
-		<a href="<?php echo get_permalink() ?>">[...]</a>
-	</div>
-    /* End edit yeu cau 2 */
+		<div class="job-description-content">
+			<?php echo wp_trim_words(get_the_content(), 25, ''); ?>
+			<a href="<?php echo get_permalink() ?>">[...]</a>
+		</div>
 
-	<?php if ($job_featured) { ?>
-		<div class="featured-label"><?php esc_html_e('Featured', 'jobscout'); ?></div>
-	<?php } ?>
+		<?php if ($job_featured) { ?>
+			<div class="featured-label"><?php esc_html_e('Featured', 'jobscout'); ?></div>
+		<?php } ?>
 
-</article>
+	</article>
+</div>

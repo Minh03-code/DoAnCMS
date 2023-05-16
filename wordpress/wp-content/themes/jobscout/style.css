@@ -8314,6 +8314,7 @@ RESPONSIVE STYLESHEET
 
 .top-job-section .row div.job_listings article {
   border: 0 solid rgba(0, 0, 0, 0.1);
+  width: auto;
   border-radius: 2px;
 }
 
@@ -8344,4 +8345,8 @@ div.job_listings .load_more_jobs {
 .top-job-section div.job_listings .load_more_jobs:hover::before {
   background-image: none;
 }
-/* End css yeu cau 2 */
+
+.site-content .container {
+  max-width: 80%;
+}
+/* End css  yeu cau 2 */
