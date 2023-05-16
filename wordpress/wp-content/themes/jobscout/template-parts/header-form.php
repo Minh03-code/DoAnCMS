@@ -27,8 +27,8 @@ if ($post_slug) {
 
   <?php
   global $wpdb;
-  $table = $wpdb->prefi . 'postmeta';
-  $sql = "SELECT DISTINCT SUBSTRING_INDEX(`meta_value`, '_' ,-1) as location FROM `wp_postmeta` WHERE `meta_key` like '%location%' ORDER BY location";
+  $table = $wpdb->prefix . 'postmeta';
+  $sql = "SELECT DISTINCT SUBSTRING_INDEX(`meta_value`, '.' ,-1) as location FROM `wp_postmeta` WHERE `meta_key` like '%location%' ORDER BY location";
   $data = $wpdb->get_results($wpdb->prepare($sql));
   ?>
 
