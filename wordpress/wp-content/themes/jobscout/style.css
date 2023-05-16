@@ -1371,7 +1371,7 @@ form.search-form input.search-submit:focus {
 }
 
 .page-template-default figure.post-thumbnail {
-  padding: 10px;
+  margin-bottom: 30px;
 }
 
 .page-template-default figure.post-thumbnail a.post-thumbnail {
