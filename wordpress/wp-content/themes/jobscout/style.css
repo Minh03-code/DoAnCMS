@@ -8227,10 +8227,10 @@ section[class*="-section"] .widget_text .widget-title,
 }
 
 .img-phuc {
-  height: 100%;
+  height: auto;
   /* Make sure images are scaled correctly. */
-  max-width: none;
-  width: 100%;
+  max-width: 100%;
+  /* width: 100%; */
   /* Adhere to container width. */
   vertical-align: top;
   background-size: auto;
