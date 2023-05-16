@@ -8220,5 +8220,14 @@ section.bg-st-edit{
   margin-top: 25px;
   margin-bottom: 20px;
 }
+.edit_anh{
+  
 
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  width: 100%;
+  /* Adhere to container width. */
+  vertical-align: top;
+
+}
 /* Het Css cua phan 3 */

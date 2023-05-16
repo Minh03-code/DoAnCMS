@@ -41,7 +41,7 @@ if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
 
                                 <?php
                                 if (has_post_thumbnail()) {
-                                    echo get_the_post_thumbnail($post->ID, 'post-thumbnail', "class=img-fluid");
+                                    echo get_the_post_thumbnail($post->ID, 'post-thumbnail', "class=img-fluid edit_anh");
                                 } else {
                                     jobscout_fallback_svg_image('jobscout-blog');
                                 }
