@@ -8227,13 +8227,9 @@ section[class*="-section"] .widget_text .widget-title,
 }
 
 .img-phuc {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* width: 100%; */
-  /* Adhere to container width. */
+  height: 100%;
+  width: 100%;
   vertical-align: top;
-  background-size: auto;
 }
 
 .readmore_text.phuc {
