@@ -20,7 +20,6 @@ if ($post_slug) {
   $action_page =  home_url('/');
 }
 ?>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="job_listings">
 
@@ -31,6 +30,7 @@ if ($post_slug) {
   $sql = "SELECT DISTINCT SUBSTRING_INDEX(`meta_value`, '.' ,-1) as location FROM `wp_postmeta` WHERE `meta_key` like '%location%' ORDER BY location";
   $data = $wpdb->get_results($wpdb->prepare($sql));
   ?>
+
 
   <div class="bg-black">
     <form action="<?php echo esc_url($action_page) ?>" method="GET" class="padding">
