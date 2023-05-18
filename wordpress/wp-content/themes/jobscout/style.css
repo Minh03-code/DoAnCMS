@@ -8171,6 +8171,7 @@ RESPONSIVE STYLESHEET
   color: #000;
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 1em;
   letter-spacing: 0;
 }
 .date-job-module24{
@@ -8187,10 +8188,8 @@ RESPONSIVE STYLESHEET
   padding: 5px 10px;
   border-radius: 10px;
 }
-.border-right{
-  border-right: #999 1px solid;
-  font-weight: 100;
-  font-family: 'Open Sans Condensed', sans-serif;
+.module2 .border-right{
+  border-right: #80808059 1px solid;
 }
 .module2 .text-company{
   font-size: .8rem;
@@ -8213,7 +8212,7 @@ RESPONSIVE STYLESHEET
 .module2 .description {
   color: #000;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -8229,7 +8228,7 @@ RESPONSIVE STYLESHEET
 }
 
 .module2 .alie {
-   margin-top: 3%;
+   margin-top: 10px;
 }
 
 .top-job-section div.job_listings .load_more_jobs {
@@ -8269,5 +8268,7 @@ RESPONSIVE STYLESHEET
   background-image: none;
 }
 
-
+section.top-job-section .section-title {
+  margin-bottom: 0;
+}
 /* End css  yeu cau 2 */
