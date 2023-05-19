@@ -8201,4 +8201,8 @@ RESPONSIVE STYLESHEET
 .input-group.mb-3{
   margin: 0 !important;
 }
+
+.caption-inner{
+  text-align: left !important;
+}
 /* End css for module 1 */
