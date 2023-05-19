@@ -2908,6 +2908,7 @@ section.article-section {
   margin-bottom: 40px;
 }
 
+
 .article-section .article-wrap article {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -8159,3 +8160,328 @@ RESPONSIVE STYLESHEET
 .wp-block-social-links {
   flex-wrap: wrap !important;
 }
+/* Css Cua Phan 3 */
+.content_my_box_nghiem{
+  width: 575px;
+  height: auto;
+  display: flex;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.content_my_box_left_nghiem{
+  float: left;
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+}
+.content_my_box_right_nghiem{
+  float: right;
+  width: 55%;
+  height: 100%;
+  padding: 10px;
+}
+.header_content_box_child_nghiem{
+  font-size: 1.3em;
+  margin-top: 5px;
+  margin-bottom: 0;
+  
+}
+.header_text_content_box_nghiem{
+  color: #000;
+}
+.center_content_box_nghiem{
+  width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.readmore_content_box_nghiem{
+  margin-top: 15px;
+}
+.readmore_text_nghiem{
+  font-weight: bold;
+  color: orange;
+}
+section.bg-st-edit_nghiem{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  
+}
+.article-section .bonus-edit_nghiem {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.edit_anh_nghiem{
+  
+
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  width: 100%;
+  /* Adhere to container width. */
+  vertical-align: top;
+
+}
+/* Het Css cua phan 3 */
+
+/* Start css for module 1 */
+.bg-black-minh { 
+  background: rgba(0, 0, 0, .3);
+}
+.form-control.minh{
+  border-radius: 0;
+  border: none;
+  color: #969fa7;
+}
+.input-group-text.minh{
+  background: #fff;
+  border-radius: 0;
+  border: none;
+}
+.color-ogrange{
+  color: orange;
+}
+.form-select.minh{
+  border-radius: 0;
+  border: none;
+  color: #969fa7;
+}
+.padding{
+  padding: 10px;
+  color: #fff;
+}
+.btn-ogrange.minh{
+  background: orange;
+  height: 100%;
+  color: #fff;
+}
+.btn-ogrange.minh:hover{
+  background: orange;
+  color: #fff;
+}
+.input-group{
+  margin: 0 !important;
+}
+.input-group.mb-3{
+  margin: 0 !important;
+}
+
+.caption-inner{
+  text-align: left !important;
+}
+/* End css for module 1 */
+
+/*Start Css module 5 */
+section[class*="-section"] .widget_text .widget-title,
+.section-title.phuc,
+.client-section .widget .widget-title {
+  font-size: 1.3em;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.content_my_box.phuc {
+  width: 340px;
+  height: auto;
+  display: flex;
+  background: #fff;
+  margin-bottom: 8px;
+}
+
+.header_content_box_child.phuc {
+  font-size: 0.8em;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.article-section .bonus-edit.phuc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  text-align: left;
+  margin: 40px 70px;
+}
+
+.content_my_box_left.phuc {
+  float: left;
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+}
+
+.content_my_box_right.phuc {
+  float: right;
+  width: 55%;
+  height: 100%;
+  padding: 10px;
+}
+
+.center_content_box.phuc {
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 0.6em;
+  color: #000000;
+}
+
+.readmore_content_box.phuc {
+  margin-top: 10px;
+  font-size: 0.6em;
+}
+
+.img-phuc {
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.readmore_text.phuc {
+  font-weight: bold;
+  color: orange;
+}
+
+section.bg-st-edit.phuc {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.header_text_content_box.phuc{
+  color: #000;
+}
+
+/* End Css module 5 */
+
+/* Start css yeu cau 2 */
+
+.module2 .job_listings .bg-white{
+  background: #000;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.module2 .job_listings .job-title-module24 a{
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1em;
+  letter-spacing: 0;
+}
+.date-job-module24{
+  font-size: .75em;
+  list-style: none;
+  font-weight: 700;
+  color: rgb(0 0 0 / 28%);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.module2 .bg-gray-module-24{
+  background: #f5f5f7;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.module2 .border-right{
+  border-right: #80808059 1px solid;
+}
+.module2 .text-company{
+  font-size: .8rem;
+  color: #000;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.module2 .text-company a ,strong{
+  color: #000;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.bg-white h5{
+  margin: 0 !important;
+}
+.module2 a{
+  color: #000;
+}
+
+.module2 .description {
+  color: #000;
+  text-decoration: none;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.module2 .description::before{
+  font-family: Arial, Helvetica, sans-serif;
+	color:#000;
+	content:"\2022";
+	font-size:1em;
+	padding-right:.3em;
+	position:relative;
+  left: 6px;
+}
+
+.module2 .alie {
+   margin-top: 10px;
+}
+
+.top-job-section div.job_listings .load_more_jobs {
+  display: table;
+  margin: 20px auto 0 auto;
+  font-size: 0.8888em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #f5f5f7;
+  padding: 12px 45px 12px 45px;
+  letter-spacing: 0;
+  color: #ef913acc;
+  border: 3px solid #ef913acc;
+  position: relative;
+}
+
+
+.top-job-section div.job_listings .load_more_jobs::before {
+  background: #f5f5f7;
+}
+
+.top-job-section div.job_listings .load_more_jobs::before {
+  background-image: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-job-section div.job_listings .load_more_jobs strong {
+  font-weight: 900;
+  color: #ef913acc;
+}
+
+.top-job-section div.job_listings .load_more_jobs:hover::before {
+  background-image: none;
+}
+
+section.top-job-section .section-title {
+  margin-bottom: 0;
+}
+.module2 img{
+	width: 100%;
+}
+
+/* End css  yeu cau 2 */
