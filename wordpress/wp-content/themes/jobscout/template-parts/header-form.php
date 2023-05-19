@@ -32,7 +32,7 @@ if ($post_slug) {
   ?>
 
 
-  <div class="bg-black">
+  <div class="bg-black-minh">
     <form action="<?php echo esc_url($action_page) ?>" method="GET" class="padding">
       <div class="row">
         <div class="col-md-6">
