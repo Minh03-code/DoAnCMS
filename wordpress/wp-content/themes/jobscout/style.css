@@ -8368,3 +8368,116 @@ section.bg-st-edit.phuc {
 }
 
 /* End Css module 5 */
+
+/* Start css yeu cau 2 */
+
+.module2 .job_listings .bg-white{
+  background: #000;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.module2 .job_listings .job-title-module24 a{
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1em;
+  letter-spacing: 0;
+}
+.date-job-module24{
+  font-size: .75em;
+  list-style: none;
+  font-weight: 700;
+  color: rgb(0 0 0 / 28%);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.module2 .bg-gray-module-24{
+  background: #f5f5f7;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.module2 .border-right{
+  border-right: #80808059 1px solid;
+}
+.module2 .text-company{
+  font-size: .8rem;
+  color: #000;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.module2 .text-company a ,strong{
+  color: #000;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.bg-white h5{
+  margin: 0 !important;
+}
+.module2 a{
+  color: #000;
+}
+
+.module2 .description {
+  color: #000;
+  text-decoration: none;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.module2 .description::before{
+  font-family: Arial, Helvetica, sans-serif;
+	color:#000;
+	content:"\2022";
+	font-size:1em;
+	padding-right:.3em;
+	position:relative;
+  left: 6px;
+}
+
+.module2 .alie {
+   margin-top: 10px;
+}
+
+.top-job-section div.job_listings .load_more_jobs {
+  display: table;
+  margin: 20px auto 0 auto;
+  font-size: 0.8888em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #f5f5f7;
+  padding: 12px 45px 12px 45px;
+  letter-spacing: 0;
+  color: #ef913acc;
+  border: 3px solid #ef913acc;
+  position: relative;
+}
+
+
+.top-job-section div.job_listings .load_more_jobs::before {
+  background: #f5f5f7;
+}
+
+.top-job-section div.job_listings .load_more_jobs::before {
+  background-image: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-job-section div.job_listings .load_more_jobs strong {
+  font-weight: 900;
+  color: #ef913acc;
+}
+
+.top-job-section div.job_listings .load_more_jobs:hover::before {
+  background-image: none;
+}
+
+section.top-job-section .section-title {
+  margin-bottom: 0;
+}
+/* End css  yeu cau 2 */
