@@ -24,7 +24,7 @@ $company_name = get_post_meta(get_the_ID(), '_company_name', true);
 
 ?>
 <div class="col-6">
-	<div class="bg-white">
+	<div class="bg-white-module24">
 		<div class="row">
 			<div class="col-md-4">
 				<?php the_company_logo('thumbnail'); ?>
