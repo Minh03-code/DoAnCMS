@@ -8430,14 +8430,12 @@ section.bg-st-edit.phuc {
 .module2 .text-company {
   font-size: .8rem;
   color: #000;
-  font-weight: 700;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .module2 .text-company a,
 strong {
   color: #000;
-  font-weight: 700;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -8553,7 +8551,6 @@ section.top-job-section .section-title {
 .text-company {
   font-size: .45em;
   color: #000;
-  font-weight: 700;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
