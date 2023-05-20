@@ -8187,7 +8187,9 @@ RESPONSIVE STYLESHEET
 .header_content_box_child_nghiem {
   font-size: 1.3em;
   margin-top: 5px;
-  margin-bottom: 0;
+
+  margin-bottom: 10px;
+  
 
 }
 
@@ -8205,8 +8207,9 @@ RESPONSIVE STYLESHEET
   -webkit-box-orient: vertical;
 }
 
-.readmore_content_box_nghiem {
-  margin-top: 15px;
+.readmore_content_box_nghiem{
+  margin-top: 20px;
+
 }
 
 .readmore_text_nghiem {
