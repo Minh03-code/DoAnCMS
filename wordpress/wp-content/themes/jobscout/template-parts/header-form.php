@@ -49,11 +49,12 @@ if ($post_slug) {
               <i class="fa fa-map-marker color-ogrange" aria-hidden="true"></i>
             </label>
             <select class="form-select minh" id="inputGroupSelect02" id="search_location" name="search_location">
-              <option selected></option>
               <?php
               foreach ($data as $item) {
+                var_dump($dem+"dd");
               ?>
-                <option value="<?php echo $item->location ?>"><?php echo $item->location ?></option>
+              
+                <option <?php if (count($data) - 1 == 0) { echo "selected";} ?> value="<?php echo $item->location ?>"><?php echo $item->location ?></option>
               <?php
               }
               ?>
