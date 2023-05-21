@@ -51,14 +51,11 @@ if ($post_slug) {
             <select class="form-select minh" id="inputGroupSelect02" id="search_location" name="search_location">
               <?php
               foreach ($data as $item) {
-                var_dump($dem+"dd");
               ?>
-              
-                <option <?php if (count($data) - 1 == 0) { echo "selected";} ?> value="<?php echo $item->location ?>"><?php echo $item->location ?></option>
+                <option <?php if (count($data) - 1 == 0) { echo "selected"; } ?> value="<?php echo $item->location ?>"><?php echo $item->location ?></option>
               <?php
               }
               ?>
-
             </select>
           </div>
         </div>
